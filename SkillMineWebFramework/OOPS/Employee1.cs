@@ -17,6 +17,7 @@ namespace SkillMineDotNetFramework
             // this refers to the data member
             this.empname = empname;
             this.basic = basic;
+            this.CalculateSalary();
         }
         public virtual void CalculateSalary()
         {
@@ -24,6 +25,7 @@ namespace SkillMineDotNetFramework
             da = basic * 0.20;
             pf = basic * 0.12;
             gross = (basic + hra + da) - pf;
+            
         }
         // ToString() --> string representation of an object
         public override string ToString()

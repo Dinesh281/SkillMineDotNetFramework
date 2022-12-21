@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using SkillMineDotNetFramework.Collection;
 using SkillMineDotNetFramework.Collection.Generic_Collection;
+using SkillMineDotNetFramework.Collection.Generic_Collection.Stack1;
 using SkillMineDotNetFramework.OOPS;
 using Employee = SkillMineDotNetFramework.Collection.Generic_Collection.Employee;
 
@@ -160,20 +161,38 @@ namespace SkillMineDotNetFramework
         //Console.WriteLine(str1.Trim());
 
     }*/
+        /*        static void Main(string[] args)
+                {
+                    Department dep = new Department();
+                    foreach (Employee d in dep)
+                    {
+                        Console.WriteLine(d);
+
+                    }
+                    Employee e1 = new Employee("Rohit", 45000);
+                    Employee e2= new Employee("Mohit", 50000);
+                    Employee e3= new Employee("Yogesh", 30000);
+                    Employee e4= new Employee("Hitesh", 25000);
+                    Employee e5= new Employee("Rahul", 35000);
+                    int result = e1.CompareTo(e4);
+                }*/
         static void Main(string[] args)
         {
-            Department dep = new Department();
-            foreach (Employee d in dep)
-            {
-                Console.WriteLine(d);
+            HashSet<int> list = new HashSet<int>();
+            list.Add(10);
+            list.Add(20);
+            list.Add(30);
+            list.Add(40);
+            list.Add(50);
+            //list.Add(30);
 
+            list.Remove(50);
+            // list.Clear();
+            foreach (int item in list)
+            {
+                Console.WriteLine(item);
             }
-            Employee e1 = new Employee("Rohit", 45000);
-            Employee e2= new Employee("Mohit", 50000);
-            Employee e3= new Employee("Yogesh", 30000);
-            Employee e4= new Employee("Hitesh", 25000);
-            Employee e5= new Employee("Rahul", 35000);
-            int result = e1.CompareTo(e4);
+
         }
     }
 
