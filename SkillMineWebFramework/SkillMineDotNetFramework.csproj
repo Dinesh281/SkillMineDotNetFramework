@@ -45,10 +45,12 @@
   <ItemGroup>
     <Compile Include="Array2D\DisplayMatrics.cs" />
     <Compile Include="Collection\Generic Collection\Bank.cs" />
+    <Compile Include="Collection\Generic Collection\Department1.cs" />
     <Compile Include="Collection\Generic Collection\DictionaryDemo.cs" />
     <Compile Include="Collection\Generic Collection\Employee.cs" />
     <Compile Include="Collection\Generic Collection\HashSet1\HashSetDemo.cs" />
     <Compile Include="Collection\Generic Collection\ListDemo.cs" />
+    <Compile Include="Collection\Generic Collection\Product.cs" />
     <Compile Include="Collection\Generic Collection\Queue1\QueueDemo.cs" />
     <Compile Include="Collection\Generic Collection\SortedList1\SortedListDemo.cs" />
     <Compile Include="Collection\Generic Collection\Stack1\StackDemo.cs" />

@@ -178,19 +178,40 @@ namespace SkillMineDotNetFramework
                 }*/
         static void Main(string[] args)
         {
-            HashSet<int> list = new HashSet<int>();
-            list.Add(10);
-            list.Add(20);
-            list.Add(30);
-            list.Add(40);
-            list.Add(50);
-            //list.Add(30);
-
-            list.Remove(50);
-            // list.Clear();
-            foreach (int item in list)
+            List<Category> clist = new List<Category>()
             {
-                Console.WriteLine(item);
+                new Category
+                {
+                    prdtype="Furniture",
+                    prod={new Product {Prdname="Chair",Colour="Black",Price=500},
+                          new Product {Prdname="Sofa",Colour="Blue",Price=10000},
+                          new Product {Prdname="Dining Table",Colour="Grey",Price=1000}
+                    }
+                },
+                new Category
+                {
+                    prdtype="Mobile",
+                    prod={new Product {Prdname="Samsung",Colour="Carbon Black",Price=10500},
+                          new Product {Prdname="Nokia",Colour="Blue",Price=10000},
+                          new Product {Prdname="One Plus",Colour="Grey",Price=40000}
+                    }
+                },
+                new Category
+                {
+                    prdtype="Cloth",
+                    prod={new Product {Prdname="Shirt",Colour="Blue",Price=1500},
+                          new Product {Prdname="Pant",Colour="Black",Price=2000},
+                          new Product {Prdname="Tshirt",Colour="Grey",Price=1000}
+                    }
+                }
+            };
+            foreach (Category c in clist)
+            {
+                Console.WriteLine($"Category--> {c.prdtype} ");
+                foreach (Product p in c.prod)
+                {
+                    Console.WriteLine($"Product--> {p.Prdname} colour--> {p.Colour} Price--> {p.Price}");
+                }
             }
 
         }
